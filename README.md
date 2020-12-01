@@ -1,4 +1,4 @@
-The resume was last updated in December 2020.
+This resume was last updated in December 2020.
 
 ### Preview
 
