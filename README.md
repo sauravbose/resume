@@ -5,5 +5,5 @@ The resume was last updated in December 2020.
 ![Resume Screenshot](/Resume_Saurav_Bose.jpg)
 
 ### Acknowledgements
-* To [@sb2nov](https://github.com/sb2nov/) for the initial code!
-* And to others contributors listed [here](https://github.com/sb2nov/resume/graphs/contributors)
+* [@sb2nov](https://github.com/sb2nov/) for the initial LaTeX code.
+* Many others contributors listed [here](https://github.com/sb2nov/resume/graphs/contributors)
