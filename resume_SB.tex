@@ -1,0 +1,223 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\usepackage{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeEducation}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small #3} & \textit{\small #4} \\
+      \textit{#5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSimpleItem}[1]{\item\small {#1} \vspace{-4pt}}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+%For the UPenn work ex
+\newcommand{\resumeLongSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeLongSubSubheading}[1]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sauravbose.github.io/}{\Large Saurav Bose}} & Email : \href{mailto:saurav.bose93@gmail.com}{saurav.bose93@gmail.com}\\
+  \href{https://sauravbose.github.io/}{https://sauravbose.github.io} & Mobile : +1-267-746-9451 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEducation
+      {University of Pennsylvania}{Philadelphia, PA}
+      {Dual Master of Science in Scientific Computing and Mechanical Engineering;  GPA: 3.8/4.0}{2015 -- 2018}
+      {Concentration in Statistics, Machine Learning and Numerical Analysis}
+    \resumeEducation
+      {National Institute of Technology Karnataka}{Surathkal, India}
+      {Bachelor of Technology in Mechanical Engineering;  GPA: 8.8/10.0}{2011 -- 2015}{Concentration in Numerical Analysis and Simulation}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Children's Hospital of Philadelphia Research Institute}{Philadelphia, PA}
+      {Data Scientist I}{Jul 2018 - Present}
+      \resumeItemListStart
+        \resumeSimpleItem
+        {Led applied machine learning projects to predict various clinical outcomes using large scale EHR data from ideation to dissemination (see Publications).
+        }
+        \resumeSimpleItem
+        {Formulated analysis plans in collaboration with physicians and other domain experts.
+        }
+        \resumeSimpleItem
+        {Presented research findings to varied technical and non-technical audiences.
+        }
+        \resumeSimpleItem
+        {Provided technical mentorship to students and fellow data scientists. 
+        }
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+    % \resumeSubSubheading
+    % {Software Engineer I}{Oct 2014 - Sep 2016}
+    % \resumeItemListStart
+    %     \resumeItem{Apache Beam}
+    %      {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    % \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeLongSubheading
+      {University of Pennsylvania}{Philadelphia, PA}
+      {Graduate Research and Teaching Assistant}{May 2016 - May 2018}
+      \resumeLongSubSubheading
+        {Research}
+      \resumeItemListStart
+        \resumeSimpleItem
+          {Worked with the School of Medicine and the School of Engineering on multiple research projects (see Portfolio for more details).}
+        \resumeSimpleItem
+          {Extended core Relief Based Algorithms (RBAs) for feature selection to their iterative variants suitable for Big Data applications. Made open-source contributions to scikit-rebate (a scikit-learn package under active development).}
+        \resumeSimpleItem
+          {Developed C/C++ codes implementing variations to Metropolis Monte Carlo algorithm for parametric estimation of molecular properties of fluids.}
+      \resumeItemListEnd
+      
+      \resumeLongSubSubheading
+        {Teaching}    
+      \resumeItemListStart
+        \resumeSimpleItem
+          {Head TA at the Wharton School for Mathematical Statistics (Prof. Warren Ewens).}
+        \resumeSimpleItem
+          {TA at the Engineering School for advanced Machine Learning (Prof. Shivani Agarwal).}
+        \resumeSimpleItem
+          {Conducted office hours, tutorial sessions and mentored student projects.}
+          
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Avis Budget Group}{Parsippany, NJ}
+      {Data Science Intern}{Summer 2017}
+      \resumeItemListStart
+        \resumeSimpleItem
+        {Queried, cleaned and visualized corporate data from Oracle databases to automate demand and performance reporting processes.
+        }
+        \resumeSimpleItem
+        {Developed an ensemble of Regularized Multiple Regression and Time Series models to predict rental demand.
+        }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Publications-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSimpleItem
+    {\textbf{Bose, S.}, Kenyon, C. \& Masino, A.J. "Personalized Prediction of Early Childhood Asthma Persistence: A Machine Learning Approach", \textit{Under Review}
+    }
+    \resumeSimpleItem
+    {Urbanowicz, R.J., Xu, A., \textbf{Bose, S.}, Orzechowski, P., Fu, W. \& Moore, J.H. "Scaling Advanced Feature Selection Methods for Biomedical Informatics and Beyond", \textit{In Preparation}
+    }
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Programming}
+      {Python, R, SQL, C++, MATLAB}
+    \resumeSubItem{Tools and Technologies}
+      {PyTorch, GCP, Git, Docker, Tableau}
+ \resumeSubHeadingListEnd
+
+%--------Coursework------------
+\section{Relevant Coursework}
+Machine Learning, Big Data Analytics, Mathematical Statistics, Modern Data Mining, Data Science for Bioinformatics, Analysis of Algorithms, Numerical Methods, Probability Theory and Applications, Linear Algebra, Single and Multi-variable Calculus. 
+
+%-------------------------------------------
+\end{document}
